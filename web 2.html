@@ -586,14 +586,14 @@
         });
     });
 
-    // AI模型選擇
-    document.getElementById('ai-model').addEventListener('change', (e) => {
-        state.selectedAIModel = e.target.value; // 保存當前選擇的模型
-    });
-}            
-            // 頁面關閉前自動保存
-            window.addEventListener('beforeunload', () => saveUserData(false));
-        
+// AI模型選擇
+document.getElementById('ai-model').addEventListener('change', (e) => {
+    state.selectedAIModel = e.target.value; // 保存當前選擇的模型
+});
+
+// 頁面關閉前自動保存
+window.addEventListener('beforeunload', () => saveUserData(false));
+}
         
         // 載入使用者數據
         function loadUserData() {
